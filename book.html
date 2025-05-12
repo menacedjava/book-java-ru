@@ -360,8 +360,32 @@ public class Entering {
         nextInt() – для получения целого числа.<br>2. nextDouble() – для получения десятичного числа.<br>3. nextLine() –
         для получения целой строки текста.<br>4. next() – для получения только одного слова.</p>
     <div class="code-box">
-        <pre><code></code></pre>
+        <pre><code>import java.util.Scanner;
+
+public class KiritishMisol {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Получение данных от пользователя
+        System.out.print("Введите ваше имя: ");
+        String ism = scanner.nextLine();
+
+        System.out.print("Введите ваш возраст: ");
+        int yosh = scanner.nextInt();
+
+        System.out.print("Введите ваше любимое число: ");
+        double son = scanner.nextDouble();
+
+        // Вывод полученных данных
+        System.out.println("Привет, " + ism + "!");
+        System.out.println("Ваш возраст: " + yosh);
+        System.out.println("Ваше любимое число: " + son);
+    }
+}
+</code></pre>
     </div>
+
+
 </div>
 </body>
 
