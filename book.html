@@ -302,7 +302,22 @@ public class Operators {
     <p>"==" -> равно ли <br> "!=" -> не равно ли <br>">" -> больше <br>"<" -> меньше <br>">="
         –> больше или равно <br> "<=" -> меньше или равно</p>
     <div class="code-box">
-        <pre><code></code></pre>
+        <pre><code>
+public class Operators {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 10;
+
+        System.out.println("Равны? " + (x == y));             // false
+        System.out.println("Не равны? " + (x != y));          // true
+        System.out.println("Больше? " + (x > y));             // false
+        System.out.println("Меньше? " + (x < y));             // true
+        System.out.println("Больше или равно? " + (x >= y));  // false
+        System.out.println("Меньше или равно? " + (x <= y));  // true
+    }
+}
+
+        </code></pre>
     </div>
 
 </div>
